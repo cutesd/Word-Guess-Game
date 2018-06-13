@@ -38,7 +38,6 @@ $(document).ready(function () {
         }
 
         this.guess = function (ltr) {
-            console.log(ltr);
             checkAnswer(ltr);
         }
 
@@ -58,7 +57,6 @@ $(document).ready(function () {
             guesses = [];
             answer = getRndWord();
             ans_arr = new Array(answer.length);
-            console.log(answer + ', ' + ans_arr.length);
             if (jumbo) jumbo.classList.add('d-none');
             wrongCnt = 0;
             img.src=["assets/images/hm"+ (++wrongCnt)+".gif"];
@@ -69,7 +67,6 @@ $(document).ready(function () {
 
         function arrUpdate() {
             for (var i = 0; i < ans_arr.length; i++) {
-                console.log(ans_arr[i]);
                 if (ans_arr[i] == undefined) {
                     setCellVal(i, "＿");
                 }
@@ -97,7 +94,6 @@ $(document).ready(function () {
         }
 
         function checkAnswer(ltr) {
-            console.log(answer.indexOf(ltr)+ ", "+ guesses.indexOf(ltr.toUpperCase()));
             if (answer.indexOf(ltr) > -1 && guesses.indexOf(ltr.toUpperCase()) < 0) {
                 guesses.push(ltr.toUpperCase());
                 for (var i = 0; i < answer.length; i++) {
@@ -127,7 +123,6 @@ $(document).ready(function () {
                 jumbo.classList.remove('d-none');
                 winCnt++;
             }
-            console.log('correctCnt: '+correctCnt);
             display();
         }
 
