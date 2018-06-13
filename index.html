@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="description" content="Word Guess Game for intro to Javascript">
+    <meta name="author" content="Kimberly Cooper">
+    <link rel="icon" href="assets/images/icon.png">
+    <title>Word Guess Game</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <!-- ADDITIONAL CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+
+</head>
+
+<body>
+
+    <div class="row no-gutters h-100">
+        <!-- LEFT SIDEBAR -->
+        <div class="col-md-5 side-bar">
+            <div class="container">
+                <div class="logo mt-3">
+                    <p>that is some&nbsp;low&nbsp;&nbsp;&nbsp; <span class="big">hang</span> <span class="tight">ing&nbsp;fruit</span> <span class="big">man</span></p>
+                </div>
+
+                <table class="table table-striped">
+                    <tbody>
+                        <tr>
+                            <td>Wins:</td>
+                            <td>
+                                <span id="winOut"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Losses:</td>
+                            <td>
+                                <span id="lossOut"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Guesses Left:</td>
+                            <td>
+                                <span id="remainOut"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Your Guesses:</td>
+                            <td>
+                                <span id="guessOut"></span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- RIGHT CONTENT -->
+        <div class="col-md-7">
+            <div class="container">
+
+                <div class="card mt-3">
+                    <img class="card-img-top shadow" src="assets/images/hm1.gif" id="hm-img" alt="Card image cap">
+                    <div class="card-body text-center">
+                        <!-- <h5 class="card-title">Card title</h5> -->
+                        <div id="answerArea" class="d-none">
+                            <p id="hint">click here to view hint</p>
+                            <h1 class="card-text shadow">
+                                <span id="answerOut"></span>
+                            </h1>
+                        </div>
+
+                        <div class="text-center d-none" id="jumboWin">
+                                <h1>YOU WIN!!!</h1>
+                                <a class="btn btn-danger">Play Again</a>
+                            </div>
+            
+                            <div class="text-center d-none" id="jumboLose">
+                                <h1>YOU LOSE!!!</h1>
+                                <h5 class="text-muted">You have exceeded your number of guesses.</h5>
+                                <a class="btn btn-danger">Try Again</a>
+                            </div>
+
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="jumbotron instr text-center">
+        <h1>Welcome</h1>
+        <h3>Press Any Letter Key to Play.</h3>
+    </div>
+
+
+
+    <!-- ==========================  JAVASCRIPT ===================================== -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
+    <!-- Bootstrap Core -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+
+    <!-- Game JS -->
+    <script src="assets/javascript/game.js"></script>
+</body>
+
+</html>

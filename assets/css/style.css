@@ -1,0 +1,182 @@
+
+@import url('https://fonts.googleapis.com/css?family=Allura|Dekko|Work+Sans:300,400,800');
+
+html, body{
+    width:100%;
+    height:100%;
+}
+
+body{
+    background: repeating-linear-gradient( 45deg, #F5B9A3, #F5B9A3 20px, #F59673 20px, #F59673 40px );
+    font-family: "Work Sans", sans-serif;
+    font-weight:400;
+    color:#333;
+}
+
+h1{
+    line-height: 57px;
+    padding: 2rem 0;
+}
+
+.instr{
+    position:absolute;
+    left:50%;
+    left: 50%;
+    -webkit-transform: translateX(-45%);
+    transform: translateX(-45%);
+    top:20%;
+    width: 45%;
+    background-color: #43C6AC;
+    border: 10px solid #7BCDBA;
+    box-shadow: 0 0 25px rgba(0,0,0,.85);
+    text-shadow: 0 0 5px rgba(0,0,0,.25);
+    color:#FFF;
+    z-index:999;
+}
+
+.instr h1{
+    font-family: "Allura", cursive;
+    font-size: 5rem;
+    padding:0;
+}
+
+.instr h3{
+    font-weight:300;
+}
+
+.logo .big{
+    font-family: "Work Sans", sans-serif;
+    font-weight:800;
+    font-size: 4rem;
+    color:#fff;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+}
+
+.logo p{
+    font-family: "Dekko", sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 7px;
+    line-height: 2rem;
+    color: #009e8c;
+    margin: 0;
+    padding-left: .15rem;
+    width: 50%;
+}
+
+.side-bar{
+    background-color: #43C6AC;
+    border-right: 4px solid #93D6C6;
+    max-width: 350px;
+}
+
+.table td{
+    width:50%;
+    border:none;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #7BCDBA;
+}
+
+.table-striped tbody tr:nth-of-type(even) {
+    background-color: #9FDACC;
+}
+
+.card{
+    max-width:625px;
+    background-color: initial;
+    border: none;
+}
+
+.card-img-top{
+    border-radius: 5px;
+    padding-bottom: 5px;
+    background-color: #FFF;
+}
+
+.card-text{
+    background-color: #FFF;
+    border-radius: 5px;
+}
+
+#jumboWin h1, #jumboLose h1{
+    padding:0;
+}
+
+a{
+    color:#FFF!important;
+}
+
+.shadow{
+    box-shadow: 0 0 15px rgba(0,0,0,.5);
+}
+    
+p#hint{
+    border:1px solid #ee4f14;
+    -webkit-border-radius: 3px; 
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    /* font-size:12px; */
+    padding: 10px 10px 10px 10px; text-decoration:none; display:inline-block; color: #FFFFFF;
+    background-color: #f27243; 
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f27243), to(#f15218));
+    background-image: -webkit-linear-gradient(top, #f27243, #f15218);
+    background-image: -moz-linear-gradient(top, #f27243, #f15218);
+    background-image: -ms-linear-gradient(top, #f27243, #f15218);
+    background-image: -o-linear-gradient(top, #f27243, #f15218);
+    background-image: linear-gradient(to bottom, #f27243, #f15218);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#f27243, endColorstr=#f15218);
+}
+
+p#hint:hover{
+    border:1px solid #f16f3f; 
+        background-color: #F59673; background-image: -webkit-gradient(linear, left top, left bottom, from(#F59673), to(#F47648));
+        background-image: -webkit-linear-gradient(top, #F59673, #F47648);
+        background-image: -moz-linear-gradient(top, #F59673, #F47648);
+        background-image: -ms-linear-gradient(top, #F59673, #F47648);
+        background-image: -o-linear-gradient(top, #F59673, #F47648);
+        background-image: linear-gradient(to bottom, #F59673, #F47648);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#F59673, endColorstr=#F47648);
+        cursor:pointer;
+    }
+
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+  
+    > .col,
+    > [class*="col-"] {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+
+  /* =============  RESPONSIVE =============== */
+  @media screen and (max-width: 768px){
+    
+      
+    .side-bar{
+        border-right: none;
+        max-width: none;
+    }
+
+    .logo{
+        text-align:center;
+    }
+
+    .logo p{
+        width:100%
+    }
+
+    .logo .tight{
+        letter-spacing: 1px;
+    }
+    
+    .logo .short{
+        line-height: 1.2rem;
+    }
+
+    
+
+
+  }
